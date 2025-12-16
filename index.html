@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferix Pack V1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #0f2027, #000);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      max-width: 900px;
+      padding: 30px;
+      text-align: center;
+      animation: fadeIn 1.2s ease;
+    }
+    h1 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, #00f5ff, #7cff00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+      animation: glow 3s infinite alternate;
+    }
+    .bio {
+      font-size: 1.1rem;
+      line-height: 2;
+      color: #ddd;
+      margin-bottom: 40px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 25px;
+      backdrop-filter: blur(10px);
+    }
+    .download-btn {
+      position: relative;
+      display: inline-block;
+      padding: 18px 60px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #000;
+      background: linear-gradient(135deg, #00f5ff, #7cff00);
+      border-radius: 50px;
+      text-decoration: none;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .download-btn:hover { transform: scale(1.08); }
+    .download-btn::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(from 0deg, transparent, rgba(255,255,255,0.8), transparent 30%);
+      animation: spin 2s linear infinite;
+    }
+    .download-btn span {
+      position: relative;
+      z-index: 2;
+    }
+    .platforms {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px rgba(0,245,255,0.4); }
+      to { text-shadow: 0 0 25px rgba(124,255,0,0.9); }
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2.2rem; }
+      .bio { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ferix Pack V1</h1>
+    <div class="bio">
+      Ferix Pack V1 یک پک حرفه‌ای و خفن برای افرادیه که دنبال سرعت، قدرت و کیفیت واقعی هستن.
+      این پک با تمرکز روی طراحی مدرن، عملکرد بالا و سازگاری کامل با موبایل  ساخته شده.
+      اگر می‌خوای یه سطح بالاتر از بقیه باشی، Ferix Pack دقیقاً همون چیزیه که دنبالش بودی.
+    </div>
+    <a href="#" class="download-btn">
+      <span>دانلود Ferix Pack V1</span>
+    </a>
+    <div class="platforms">
+      سازگار با 📱 موبایل 
+    </div>
+  </div>
+</body>
+</html>
